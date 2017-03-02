@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="小杰blog">
 <meta property="og:description" content="上一篇博客介绍了什么叫HTML，那么接下来我们就开始学习HTML的标签。HTML就是负责描述页面的语义的，所以HTML并不能让文字居中，不能更改文字字号、颜色，因为这都是属于样式范畴。HTML只能做一件事情,就是通过标签对，给文本增加语义。">
 <meta property="og:image" content="http://i1.piimg.com/567571/ec4efc9df40489b1.png">
-<meta property="og:updated_time" content="2017-03-02T09:13:37.385Z">
+<meta property="og:updated_time" content="2017-03-02T09:20:24.993Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML标签">
 <meta name="twitter:description" content="上一篇博客介绍了什么叫HTML，那么接下来我们就开始学习HTML的标签。HTML就是负责描述页面的语义的，所以HTML并不能让文字居中，不能更改文字字号、颜色，因为这都是属于样式范畴。HTML只能做一件事情,就是通过标签对，给文本增加语义。">
@@ -318,6 +318,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web前端/" itemprop="url" rel="index">
+                    <span itemprop="name">web前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -365,7 +387,7 @@
 
       
         <p>上一篇博客介绍了什么叫HTML，那么接下来我们就开始学习HTML的标签。HTML就是负责描述页面的语义的，所以HTML并不能让文字居中，不能更改文字字号、颜色，因为这都是属于样式范畴。HTML只能做一件事情,就是通过标签对，给文本增加语义。<br><a id="more"></a></p>
-<h2 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h2><h3 id="h系列标签"><a href="#h系列标签" class="headerlink" title="h系列标签"></a>h系列标签</h3><p>&lt;h1&gt;到&lt;h6&gt; 都是标题标签:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>一级标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span>  </div><div class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>二级标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span>  </div><div class="line">…… </div><div class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>六级标题<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h2 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h2><h3 id="h标签"><a href="#h标签" class="headerlink" title="h标签"></a>h标签</h3><p>&lt;h1&gt;到&lt;h6&gt; 都是标题标签:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>一级标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span>  </div><div class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>二级标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span>  </div><div class="line">…… </div><div class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>六级标题<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <p>h标签没有嵌套关系的。由于h3跟着一个h2，所以，我们自己就知道了这个h3是h2子标题。<br>h是容器级的标签。理论上里面可以设置p、ul,但是在语义上不要这么写。</p>
 <h3 id="p标签"><a href="#p标签" class="headerlink" title="p标签"></a>p标签</h3><p>段落,英语是paragraph “段落”的缩写。<br>html标签是分等级的,html将所有的标签分为两种:容器级和文本级<br>顾名思义,容器级标签,里面可以放置任何东西;文本级的标签里面,只能放文字、图片、表单元素。<br>p标签是一个文本级标签,所以p里面只能放文字、图片、表单元素。其他的一律不能放。<br>试着把h放到p到里：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>		</div><div class="line">    我是一个小段落		</div><div class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>我是一个主标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <p>浏览器不允许你这么做，我们使用Chrome的F12审查，你会发现，浏览器自己把p封闭掉了，不让你去包裹h1。<br><img src="http://i1.piimg.com/567571/ec4efc9df40489b1.png" alt="p标签"></p>
@@ -607,7 +629,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML标签"><span class="nav-number">1.</span> <span class="nav-text">HTML标签</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#h系列标签"><span class="nav-number">1.1.</span> <span class="nav-text">h系列标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#p标签"><span class="nav-number">1.2.</span> <span class="nav-text">p标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#img图片标签"><span class="nav-number">1.3.</span> <span class="nav-text">img图片标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#为什么是单标签？"><span class="nav-number">1.3.1.</span> <span class="nav-text">为什么是单标签？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#相对路径与绝对路径"><span class="nav-number">1.3.2.</span> <span class="nav-text">相对路径与绝对路径</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#a标签"><span class="nav-number">1.4.</span> <span class="nav-text">a标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表标签"><span class="nav-number">1.5.</span> <span class="nav-text">列表标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#无序列表"><span class="nav-number">1.5.1.</span> <span class="nav-text">无序列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#有序列表"><span class="nav-number">1.5.2.</span> <span class="nav-text">有序列表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#div和span"><span class="nav-number">1.6.</span> <span class="nav-text">div和span</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表单"><span class="nav-number">1.7.</span> <span class="nav-text">表单</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#input标签"><span class="nav-number">1.7.1.</span> <span class="nav-text">input标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#选择框"><span class="nav-number">1.7.2.</span> <span class="nav-text">选择框</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文本域"><span class="nav-number">1.7.3.</span> <span class="nav-text">文本域</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#label标签"><span class="nav-number">1.8.</span> <span class="nav-text">label标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#框架标签"><span class="nav-number">1.9.</span> <span class="nav-text">框架标签</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML注释"><span class="nav-number">2.</span> <span class="nav-text">HTML注释</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML标签"><span class="nav-number">1.</span> <span class="nav-text">HTML标签</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#h标签"><span class="nav-number">1.1.</span> <span class="nav-text">h标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#p标签"><span class="nav-number">1.2.</span> <span class="nav-text">p标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#img图片标签"><span class="nav-number">1.3.</span> <span class="nav-text">img图片标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#为什么是单标签？"><span class="nav-number">1.3.1.</span> <span class="nav-text">为什么是单标签？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#相对路径与绝对路径"><span class="nav-number">1.3.2.</span> <span class="nav-text">相对路径与绝对路径</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#a标签"><span class="nav-number">1.4.</span> <span class="nav-text">a标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表标签"><span class="nav-number">1.5.</span> <span class="nav-text">列表标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#无序列表"><span class="nav-number">1.5.1.</span> <span class="nav-text">无序列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#有序列表"><span class="nav-number">1.5.2.</span> <span class="nav-text">有序列表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#div和span"><span class="nav-number">1.6.</span> <span class="nav-text">div和span</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表单"><span class="nav-number">1.7.</span> <span class="nav-text">表单</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#input标签"><span class="nav-number">1.7.1.</span> <span class="nav-text">input标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#选择框"><span class="nav-number">1.7.2.</span> <span class="nav-text">选择框</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文本域"><span class="nav-number">1.7.3.</span> <span class="nav-text">文本域</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#label标签"><span class="nav-number">1.8.</span> <span class="nav-text">label标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#框架标签"><span class="nav-number">1.9.</span> <span class="nav-text">框架标签</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML注释"><span class="nav-number">2.</span> <span class="nav-text">HTML注释</span></a></li></ol></div>
             
 
           </div>
