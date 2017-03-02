@@ -1,0 +1,897 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="HTML," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="上一篇博客介绍了什么叫HTML，那么接下来我们就开始学习HTML的标签。HTML就是负责描述页面的语义的，所以HTML并不能让文字居中，不能更改文字字号、颜色，因为这都是属于样式范畴。HTML只能做一件事情,就是通过标签对，给文本增加语义。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML标签">
+<meta property="og:url" content="http://yoursite.com/2016/07/08/html-label/index.html">
+<meta property="og:site_name" content="小杰blog">
+<meta property="og:description" content="上一篇博客介绍了什么叫HTML，那么接下来我们就开始学习HTML的标签。HTML就是负责描述页面的语义的，所以HTML并不能让文字居中，不能更改文字字号、颜色，因为这都是属于样式范畴。HTML只能做一件事情,就是通过标签对，给文本增加语义。">
+<meta property="og:image" content="http://i1.piimg.com/567571/ec4efc9df40489b1.png">
+<meta property="og:updated_time" content="2017-03-02T09:13:37.385Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HTML标签">
+<meta name="twitter:description" content="上一篇博客介绍了什么叫HTML，那么接下来我们就开始学习HTML的标签。HTML就是负责描述页面的语义的，所以HTML并不能让文字居中，不能更改文字字号、颜色，因为这都是属于样式范畴。HTML只能做一件事情,就是通过标签对，给文本增加语义。">
+<meta name="twitter:image" content="http://i1.piimg.com/567571/ec4efc9df40489b1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/07/08/html-label/"/>
+
+
+
+
+
+  <title> HTML标签 | 小杰blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小杰blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/07/08/html-label/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小杰">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小杰blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                HTML标签
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-07-08T17:12:45+08:00">
+                2016-07-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/07/08/html-label/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/08/html-label/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2016/07/08/html-label/" class="leancloud_visitors" data-flag-title="HTML标签">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>上一篇博客介绍了什么叫HTML，那么接下来我们就开始学习HTML的标签。HTML就是负责描述页面的语义的，所以HTML并不能让文字居中，不能更改文字字号、颜色，因为这都是属于样式范畴。HTML只能做一件事情,就是通过标签对，给文本增加语义。<br><a id="more"></a></p>
+<h2 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h2><h3 id="h系列标签"><a href="#h系列标签" class="headerlink" title="h系列标签"></a>h系列标签</h3><p>&lt;h1&gt;到&lt;h6&gt; 都是标题标签:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>一级标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span>  </div><div class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>二级标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span>  </div><div class="line">…… </div><div class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>六级标题<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>h标签没有嵌套关系的。由于h3跟着一个h2，所以，我们自己就知道了这个h3是h2子标题。<br>h是容器级的标签。理论上里面可以设置p、ul,但是在语义上不要这么写。</p>
+<h3 id="p标签"><a href="#p标签" class="headerlink" title="p标签"></a>p标签</h3><p>段落,英语是paragraph “段落”的缩写。<br>html标签是分等级的,html将所有的标签分为两种:容器级和文本级<br>顾名思义,容器级标签,里面可以放置任何东西;文本级的标签里面,只能放文字、图片、表单元素。<br>p标签是一个文本级标签,所以p里面只能放文字、图片、表单元素。其他的一律不能放。<br>试着把h放到p到里：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>		</div><div class="line">    我是一个小段落		</div><div class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>我是一个主标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>浏览器不允许你这么做，我们使用Chrome的F12审查，你会发现，浏览器自己把p封闭掉了，不让你去包裹h1。<br><img src="http://i1.piimg.com/567571/ec4efc9df40489b1.png" alt="p标签"></p>
+<h3 id="img图片标签"><a href="#img图片标签" class="headerlink" title="img图片标签"></a>img图片标签</h3><p>页面上可以插入图片,能够插入的图片类型:jpg(jpeg)、gif、png、bmp。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">“baby.jpg”</span> /&gt;</span></div></pre></td></tr></table></figure></p>
+<p>img标签,可以在页面上插入图片。<br>img是英语image”图片”的缩写,src就是”source”的缩写<br>src是img标签的属性,baby.jpg是这个属性的值。<br>img是自封闭标签,也称为单标签。</p>
+<h4 id="为什么是单标签？"><a href="#为什么是单标签？" class="headerlink" title="为什么是单标签？"></a>为什么是单标签？</h4><p>因为如果不是但标签,那么标签之间可以放东西,但是这样的话就给img标签增加了语义,所以会有单标签。</p>
+<p>alt属性是alternate”替代”的意思,就是图片标签里面的图片无法显示了,就会出现替代的文字</p>
+<h4 id="相对路径与绝对路径"><a href="#相对路径与绝对路径" class="headerlink" title="相对路径与绝对路径"></a>相对路径与绝对路径</h4><p>绝对路径：文件在硬盘上的具体位置。<br>相对路径：文件相对于引入者的位置。</p>
+<h3 id="a标签"><a href="#a标签" class="headerlink" title="a标签"></a>a标签</h3><p>一个网站是由很多html网页组成的,html网页之间能够通过超级链接相互跳转。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">“1.html”</span>&gt;</span>跳转到1.html页面<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>a是英语anchor”锚”的意思,就好像这个页面往另外一个页面扔出了一个锚.是一个文本级的标签。<br>href是英语hypertext reference超文本地址的缩写。<br>属性：</p>
+<blockquote>
+<ul>
+<li>href 设置链接路径    <pre><code>访问内网：相对路径，绝对路径
+访问外网：需要加上http协议。 例如：http://www.baidu.com 
+</code></pre></li>
+<li>name 设置锚点，相当于书签，配合herf使用，设置锚点，a标签可以没有内容。</li>
+<li>target 定位资源打开位置，一般可以配合框架使用。</li>
+</ul>
+</blockquote>
+<h3 id="列表标签"><a href="#列表标签" class="headerlink" title="列表标签"></a>列表标签</h3><h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><p>无序列表,用来表示一个列表的语义,每个列表项之间是不分先后的。<br>ul:就是英语unordered list ，”无序列表”的意思<br>li:就是英语list item ,”列表项”的意思。<br>这是一组标签,也就是说li不能单独存在,必须包裹在ul里面。还有就是ul里面只能有li标签,不允许放其他标签(放也不会报错,但是语义读不通)<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>北京<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>上海<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>广州<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>铁岭<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">``` </div><div class="line">下面的是错误的，因为ul里面只能有li标签，而不能有别的：</div><div class="line">``` html</div><div class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">h3</span>&gt;</span>中国主要城市<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>北京<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>上海<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>广州<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>铁岭<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>浏览器会默认给无序列表小圆点,这个叫”先导符号”。li是一个容器级标签,li里面什么都能放。</p>
+<h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><p>ordered list 有序列表,用ol表示。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>小苹果<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>月亮之上<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">li</span>&gt;</span>最炫民族风<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></div><div class="line">``` </div><div class="line">浏览器会自动增加阿拉伯序号.</div><div class="line">也就是说,ol和ul就是语义不一样,怎么使用都是一样的。</div><div class="line">ol里面只能有li,li必须别ol包裹,li是容器级标签。</div><div class="line">ol因为有顺序的含义,所以用的不多,常用ul。</div><div class="line"></div><div class="line">#### 自定义列表</div><div class="line">dl表示definition list 定义列表</div><div class="line">dt表示definition title	定义标题</div><div class="line">dd表示definition description 定义表述词</div><div class="line">dt、dd只能在dl里面,dl里面只能有dt、dd</div><div class="line">``` html</div><div class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">dt</span>&gt;</span>北京<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">dd</span>&gt;</span>国家首都，政治文化中心<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">dt</span>&gt;</span>上海<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">dd</span>&gt;</span>魔都，有外滩、东方明珠塔、黄浦江<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">dt</span>&gt;</span>广州<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">dd</span>&gt;</span>中国南大门，有珠江、小蛮腰<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>dt、dd都是容器级标签,想放什么都可以。所以用什么标签得看:<br><code>用什么标签,不是根据样子决定的,而是根据语义。</code></p>
+<h3 id="div和span"><a href="#div和span" class="headerlink" title="div和span"></a>div和span</h3><p>div的语义是division”分割”;span的语义是”范围、跨度”。<br>div在浏览器中,默认是不会增加任何样式的,但是加上这个标签语义就变了,div中所有的元素是一个小区域。<br>div标签是一个容器级标签,里面什么都能放,也可以在里面放div。</p>
+<p>span也是表达”小区域、小跨度”的标签,但是span是一个”文本级”的标签。<br>span里面是放置小元素的,div里面是防止大东西的。</p>
+<p>div+css :div标签负责布局,负责结构,负责分块。css负责页面样式。</p>
+<h3 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h3><p>表单就是收集用户信息,让用户填写的。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">h3</span>&gt;</span>欢迎注册本网站<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">form</span> <span class="attr">method</span>=<span class="string">"post"</span> <span class="attr">action</span>=<span class="string">"/xx"</span>&gt;</span></div><div class="line">		所有的表单内容，都要写在form标签里面</div><div class="line">	<span class="tag">&lt;/<span class="name">form</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>form 是英语表单的意思,form标签里面有action属性和method属性，action属性就是表示表单提交到哪里,method属性表示用什么http方式提交(get、post)。</p>
+<h4 id="input标签"><a href="#input标签" class="headerlink" title="input标签"></a>input标签</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">“text”</span> <span class="attr">value</span>=<span class="string">"我是默认值"</span>/&gt;</span></div></pre></td></tr></table></figure>
+<p>input 表示”输入”,指的是这是一个输入框。<br>type 表示”类型”,类型有：</p>
+<pre><code>&gt;* 文本框 text。输入的文本信息直接显示在框中。
+&gt;* 密码框 password。输入的文本以原点或者星号的形式显示。非明文
+&gt;* 单选框 radio 如：性别选择。
+&gt;* 复选框 checkbox 如：兴趣选择。
+&gt;* 提交按钮 submit 用于提交表单中的内容。
+&gt;* 重置按钮 reset 将表单中填写的内容设置为初始值
+&gt;* 附件框 file 后期扩展内容，会自动生成一个文本框，和一个浏览按钮。例如：照片
+&gt;* 隐藏字段 hidden 在页面上不显示，但在提交的时候随其他内容一起提交。例如：用户编号
+&gt;* 按钮   button 可以为其自定义事件。
+&gt;* 图片提交按钮 image 是一个图片形式的提交按钮。用来美化提交按钮的。提交表单数据时，会将鼠标点击图片的坐标一起封装。较少使用。
+</code></pre><p>text 表示”文本”<br>value 表示值,value属性就是默认值<br>input 是一个自闭标签,我们到现在学习了的自闭标签如下:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">“Keywords”</span> <span class="attr">content</span>=<span class="string">“关键字”/</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">““</span> <span class="attr">alt</span>=<span class="string">““</span> /&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">“text”</span> <span class="attr">name</span>=<span class="string">“username”</span> /&gt;</span></div></pre></td></tr></table></figure></p>
+<h4 id="选择框"><a href="#选择框" class="headerlink" title="选择框"></a>选择框</h4><p>select，定义了一个选择框<br>option，定义了一个选择框条目<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">select</span> &gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">option</span>&gt;</span>北京<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">option</span>&gt;</span>上海<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">option</span>&gt;</span>深圳<span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>属性：</p>
+<pre><code>&gt;* name    用来指定选择项的名称。即参数名称
+&gt;* value    用来指定选择项的值。即参数值
+&gt;* selected    用来设置选择框的默认选中。值为selected为默认选中
+</code></pre><h4 id="文本域"><a href="#文本域" class="headerlink" title="文本域"></a>文本域</h4><p>textarea，定义一个文本域输入框<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">cols</span>=<span class="string">“30”</span> <span class="attr">rows</span>=<span class="string">“20”</span>&gt;</span>这是个标签对,标签里面写的文字,就是文本域的默认值。<span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>属性：</p>
+<pre><code>&gt;* name    用来指定文本域的名称，即参数名
+&gt;* cols    定义文本域显示几列
+&gt;* rows    定义文本域显示几行
+</code></pre><p>和&lt;input type=“text”/&gt;区别：<br>1、文本域可以换行，而文本框不可以<br>2、文本域的值是写在内容体中的，文本框的值是在value中</p>
+<p><code>input select textarea 统称为表单项（表单输入项）</code></p>
+<h3 id="label标签"><a href="#label标签" class="headerlink" title="label标签"></a>label标签</h3><p>在单选按钮中,男、女这两个汉字,和input 元素没有关系。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">“radio”</span> <span class="attr">name</span>=<span class="string">“sex”</span> /&gt;</span> 男</div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">“radio”</span> <span class="attr">name</span>=<span class="string">“sex”</span> /&gt;</span>女</div></pre></td></tr></table></figure></p>
+<p>label就可以解决这个问题,让文字和单选按钮关联。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">“radio”</span> <span class="attr">name</span>=<span class="string">“sex”</span> <span class="attr">id</span>=<span class="string">“man”/</span>&gt;</span><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">“man”</span>&gt;</span>男<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">“radio”</span> <span class="attr">name</span>=<span class="string">“sex”</span> <span class="attr">id</span>=<span class="string">“woman”/</span>&gt;</span><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">“woman”</span>&gt;</span>女<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">``` </div><div class="line">input 元素要有一个id属性,然后label标签中的for属性值为input元素id的值,这样就表示绑定了,有了关系,点击汉字也能影响单选按钮。</div><div class="line">复选框也可绑定:</div><div class="line">``` html</div><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">“checkbox”</span> <span class="attr">id</span>=<span class="string">“bangd”/</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">“bangd”</span> &gt;</span>十天内免登陆<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h3 id="框架标签"><a href="#框架标签" class="headerlink" title="框架标签"></a>框架标签</h3><p>作用：将网页分割成几个部分，在每个部分分别显示不同内容。<br>注：框架标签不可以放到<body>里，一般为了代码的可读性，会到<head>和</head><body>之间。或者不要body也可以。<br>frameset<br>表示框架标记，用以宣告HTML文件为框架模式，并设定视窗如何分割。<br>常用属性：</body></body></p>
+<pre><code>&gt;* cols    垂直切割。接收整数值或百分比。*代表占用剩余空间
+&gt;* rows    横向切割。接收整数值或百分比。*代表占用剩余空间 吗
+</code></pre><p>frame<br> 表示框架页面，用来承载页面，并修改参数属性值<br>常用属性：</p>
+<pre><code>&gt;* src    表示资源的路径
+&gt;* name    设置框架的名称
+</code></pre><p>例如:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">frame</span> <span class="attr">name</span>=<span class="string">“top”/</span>&gt;</span>   </div><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">“xx.html”</span> <span class="attr">target</span>=<span class="string">“top”</span>&gt;</span>top中打开<span class="tag">&lt;/<span class="name">a</span>&gt;</span>。</div><div class="line">那么xx.html是在top框架中打开</div></pre></td></tr></table></figure></p>
+<p><code>框架已经逐渐被DIV+CSS形式取代</code></p>
+<h2 id="HTML注释"><a href="#HTML注释" class="headerlink" title="HTML注释"></a>HTML注释</h2><p>任何程序、代码都有注释,注释就是给程序员看的,不影响程序。适当的注释,能够让我们的程序更加可读。<br>注释格式:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">!—注释内容</span> <span class="attr">--</span>&gt;</span></div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HTML/" rel="tag"># HTML</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/07/hello-HTML/" rel="next" title="HTML 初体验">
+                <i class="fa fa-chevron-left"></i> HTML 初体验
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/02/24/blog/" rel="prev" title="小杰博客">
+                小杰博客 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/07/08/html-label/"
+           data-title="HTML标签" data-url="http://yoursite.com/2016/07/08/html-label/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/head.jpg"
+               alt="小杰" />
+          <p class="site-author-name" itemprop="name">小杰</p>
+           
+              <p class="site-description motion-element" itemprop="description">追求技术</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML标签"><span class="nav-number">1.</span> <span class="nav-text">HTML标签</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#h系列标签"><span class="nav-number">1.1.</span> <span class="nav-text">h系列标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#p标签"><span class="nav-number">1.2.</span> <span class="nav-text">p标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#img图片标签"><span class="nav-number">1.3.</span> <span class="nav-text">img图片标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#为什么是单标签？"><span class="nav-number">1.3.1.</span> <span class="nav-text">为什么是单标签？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#相对路径与绝对路径"><span class="nav-number">1.3.2.</span> <span class="nav-text">相对路径与绝对路径</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#a标签"><span class="nav-number">1.4.</span> <span class="nav-text">a标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表标签"><span class="nav-number">1.5.</span> <span class="nav-text">列表标签</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#无序列表"><span class="nav-number">1.5.1.</span> <span class="nav-text">无序列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#有序列表"><span class="nav-number">1.5.2.</span> <span class="nav-text">有序列表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#div和span"><span class="nav-number">1.6.</span> <span class="nav-text">div和span</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表单"><span class="nav-number">1.7.</span> <span class="nav-text">表单</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#input标签"><span class="nav-number">1.7.1.</span> <span class="nav-text">input标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#选择框"><span class="nav-number">1.7.2.</span> <span class="nav-text">选择框</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#文本域"><span class="nav-number">1.7.3.</span> <span class="nav-text">文本域</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#label标签"><span class="nav-number">1.8.</span> <span class="nav-text">label标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#框架标签"><span class="nav-number">1.9.</span> <span class="nav-text">框架标签</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML注释"><span class="nav-number">2.</span> <span class="nav-text">HTML注释</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小杰</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"showmecom"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("zHQ8LkgBqM7eWTFuDAhcEv3Q-gzGzoHsz", "eRiUwkATFCuGYEYRI1URts1B");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+
+  
+
+</body>
+</html>
+<!-- 背景动画 -->
+<script type="text/javascript" src="/js/src/particle.js"></script>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
