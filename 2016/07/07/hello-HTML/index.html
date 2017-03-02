@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="小杰blog">
 <meta property="og:description" content="HTML简介HTML(Hyper Text Markup Language):翻译成中文,叫超文本标记语言。
 什么叫超文本？我们知道window系统自带有一个文本编辑器notepad,可以用来书写txt文件,这个程序基本上可以满足我们日常使用。但是有一天，我们想把自己写的txt放到网络上，让大家看。这时候我们发现txt简直太low了,整个文件就一个格式,让读者望而生畏。这时候我们就想能不能给他修饰">
-<meta property="og:updated_time" content="2017-03-01T03:56:36.796Z">
+<meta property="og:updated_time" content="2017-03-02T02:41:39.338Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML 初体验">
 <meta name="twitter:description" content="HTML简介HTML(Hyper Text Markup Language):翻译成中文,叫超文本标记语言。
@@ -392,7 +392,18 @@
 <h3 id="那么什么叫标记语言？"><a href="#那么什么叫标记语言？" class="headerlink" title="那么什么叫标记语言？"></a>那么什么叫标记语言？</h3><p>我把我的文件放到网络上,浏览器会对我的文件进行解析给读者看。那么浏览器怎么知道，我哪些是标题，哪些要加粗呢。这个时候就需要我们和浏览器去约定了，我们约定给标题加上一个标签&lt;h&gt;，用这个标签修饰的内容就是标题，浏览器去解析的时候就知道那里是标题、段落等。</p>
 <hr>
 <h2 id="HTML-书写"><a href="#HTML-书写" class="headerlink" title="HTML 书写"></a>HTML 书写</h2><p>首先新建一个txt文件,然后将其扩展名.txt修改为.html(如果没有显示扩展名，则点击工具(tools)–&gt;文件夹选项(folder options)–&gt;查看(view)–&gt;高级设置里面不勾选隐藏已知文件类型的扩展名),然后用记事本打开。<br>代码如下:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>我的第一个HTML<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">        hello HTML</div><div class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
-<p>然后保存文件，右键打开方式，用浏览器打开，欣赏自己第一个HTML网页。心动不如行动，赶紧动手玩一下吧。</p>
+<p>然后保存文件，用浏览器打开，欣赏自己第一个HTML网页。心动不如行动，赶紧动手玩一下吧。</p>
+<p>现在我们来分析一下代码，整个文件由html标签包裹，然后分为头部head和身体body.</p>
+<p>head标签是一个头部容器,用来引用脚本、样式、设置网页标题等,该例子中title标签就是给网页设置标题，head标签里面的内容，不会显示在页面中。</p>
+<p>body标签用来包含文档所有的内容,负责页面的显示。</p>
+<h3 id="标签的书写规则"><a href="#标签的书写规则" class="headerlink" title="标签的书写规则"></a>标签的书写规则</h3><blockquote>
+<ul>
+<li>HTML 是由一对尖括号包裹着关键字组成的。例:&lt;head&gt;</li>
+<li>HTML 通常是成对出现的,一个开始标签和一个结束标签。例：&lt;body&gt;&lt;/body&gt;</li>
+<li>HTML 标签可以嵌套使用,但只能包裹嵌套，不能交叉嵌套。例:&lt;head&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;  错误示例:&lt;title&gt;&lt;head&gt;&lt;/title&gt;&lt;/head&gt;</li>
+<li>HTML 大小写不敏感,但是为了代码的可读性,建议标签都小写。</li>
+</ul>
+</blockquote>
 <p>由于作者水平有限,欢迎大家批评指正。<br>作者 小杰</p>
 <p>本文版权归作者所有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文链接，否则保留追究法律责任的权利。<br>2016 年 07月 07日  </p>
 
@@ -568,7 +579,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML简介"><span class="nav-number">1.</span> <span class="nav-text">HTML简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么叫超文本？"><span class="nav-number">1.1.</span> <span class="nav-text">什么叫超文本？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#那么什么叫标记语言？"><span class="nav-number">1.2.</span> <span class="nav-text">那么什么叫标记语言？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML-书写"><span class="nav-number">2.</span> <span class="nav-text">HTML 书写</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML简介"><span class="nav-number">1.</span> <span class="nav-text">HTML简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么叫超文本？"><span class="nav-number">1.1.</span> <span class="nav-text">什么叫超文本？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#那么什么叫标记语言？"><span class="nav-number">1.2.</span> <span class="nav-text">那么什么叫标记语言？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML-书写"><span class="nav-number">2.</span> <span class="nav-text">HTML 书写</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#标签的书写规则"><span class="nav-number">2.1.</span> <span class="nav-text">标签的书写规则</span></a></li></ol></li></ol></div>
             
 
           </div>
