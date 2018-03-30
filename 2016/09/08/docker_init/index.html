@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="docker," />
 
 
 
@@ -87,15 +87,51 @@
 
 
 
-<meta name="description" content="追求技术">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小杰blog">
-<meta property="og:url" content="http://yoursite.com/archives/2017/09/index.html">
+<meta name="description" content="关闭selinux首先查看selinux的状态
+    sestatus
+
+如果不是disabled 则需要关闭selinux
+    vi /etc/selinux/config
+将SELINUX修改为disabled
+    SELINUX=disabled
+修改完成后,重启linux 系统
+    reboot
+再查看selinux 的状态
+    sestatus">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CentOs 6.7 安装Docker">
+<meta property="og:url" content="http://yoursite.com/2016/09/08/docker_init/index.html">
 <meta property="og:site_name" content="小杰blog">
-<meta property="og:description" content="追求技术">
+<meta property="og:description" content="关闭selinux首先查看selinux的状态
+    sestatus
+
+如果不是disabled 则需要关闭selinux
+    vi /etc/selinux/config
+将SELINUX修改为disabled
+    SELINUX=disabled
+修改完成后,重启linux 系统
+    reboot
+再查看selinux 的状态
+    sestatus">
+<meta property="og:image" content="http://www.z4a.net/images/2017/12/14/11ebab618014fa7c00.png">
+<meta property="og:image" content="http://www.z4a.net/images/2017/12/14/a.png">
+<meta property="og:image" content="http://www.z4a.net/images/2017/12/14/22dbf3e310aeb54cb9.png">
+<meta property="og:image" content="http://www.z4a.net/images/2017/12/14/331f8327092fe45a72.png">
+<meta property="og:updated_time" content="2018-03-30T08:37:21.385Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小杰blog">
-<meta name="twitter:description" content="追求技术">
+<meta name="twitter:title" content="CentOs 6.7 安装Docker">
+<meta name="twitter:description" content="关闭selinux首先查看selinux的状态
+    sestatus
+
+如果不是disabled 则需要关闭selinux
+    vi /etc/selinux/config
+将SELINUX修改为disabled
+    SELINUX=disabled
+修改完成后,重启linux 系统
+    reboot
+再查看selinux 的状态
+    sestatus">
+<meta name="twitter:image" content="http://www.z4a.net/images/2017/12/14/11ebab618014fa7c00.png">
 
 
 
@@ -123,13 +159,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2017/09/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/09/08/docker_init/"/>
 
 
 
 
 
-  <title> 归档 | 小杰blog </title>
+  <title> CentOs 6.7 安装Docker | 小杰blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -154,7 +190,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -258,103 +294,287 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 9 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/20/ArrayList_source_analysis/" itemprop="url">
-              
-                <span itemprop="name">JAVA源码分析之ArrayList</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-20T17:16:45+08:00"
-              content="2017-09-20" >
-          09-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/08/mysql_centost7/" itemprop="url">
-              
-                <span itemprop="name">CentOS7 64位下MySQL5.7安装与配置（YUM）</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-08T17:12:45+08:00"
-              content="2017-09-08" >
-          09-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/09/08/docker_init/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小杰">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小杰blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                CentOs 6.7 安装Docker
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-08T17:12:45+08:00">
+                2016-09-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/docker/" itemprop="url" rel="index">
+                    <span itemprop="name">docker</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/09/08/docker_init/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/08/docker_init/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2016/09/08/docker_init/" class="leancloud_visitors" data-flag-title="CentOs 6.7 安装Docker">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="关闭selinux"><a href="#关闭selinux" class="headerlink" title="关闭selinux"></a>关闭selinux</h3><pre><code>首先查看selinux的状态
+    sestatus
+</code></pre><p><img src="http://www.z4a.net/images/2017/12/14/11ebab618014fa7c00.png" alt="sestatus"></p>
+<pre><code>如果不是disabled 则需要关闭selinux
+    vi /etc/selinux/config
+将SELINUX修改为disabled
+    SELINUX=disabled
+修改完成后,重启linux 系统
+    reboot
+再查看selinux 的状态
+    sestatus
+</code></pre><p><img src="http://www.z4a.net/images/2017/12/14/a.png" alt="sestatus的状态"><br><a id="more"></a></p>
+<h3 id="修改yum源"><a href="#修改yum源" class="headerlink" title="修改yum源"></a>修改yum源</h3><pre><code>2.1. 使用阿里的yum源
+    a) 首先备份yum 源
+        mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+    b) 下载阿里云的yum源
+        CentOS 5
+
+        wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-5.repo
+
+        或者
+
+        curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-5.repo
+
+        CentOS 6
+
+        wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo
+
+        或者
+
+        curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo
+
+        CentOS 7
+
+        wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+
+        或者
+
+        curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+
+2.2. 然后再安装epel 的yum 源
+        epel(RHEL 7)
+
+            wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-7.repo
+
+        epel(RHEL 6)
+
+
+            wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-6.repo
+
+        epel(RHEL 5)
+
+            wget -O /etc/yum.repos.d/epel.repo http://mirrors.aliyun.com/repo/epel-5.repo
+
+    然后生成缓存
+        yum clean all
+        yum makecache
+    先安装docker依赖
+        yum install  lxc  libcgroup  device-mapper-event-libs
+    然后再安装docker
+        yum install docker-io
+
+    安装完成后查看docker版本
+        docker -v
+</code></pre><h3 id="启动docker"><a href="#启动docker" class="headerlink" title="启动docker"></a>启动docker</h3><pre><code>a) 启动docker
+    service docker start   
+b) 查看docker 是否启动
+    ps -ef|grep docker
+c) 将docker 开机自启
+    chkconfig docker on
+d) 查看docker 的版本
+    docker version
+</code></pre><h3 id="docker-安装镜像"><a href="#docker-安装镜像" class="headerlink" title="docker 安装镜像"></a>docker 安装镜像</h3><pre><code>a) 在线安装
+    搜索可用的docker镜像
+        docker search centos
+    在有网络的情况下,可以通过命令在线安装
+        docker pull centos:7 或 sudo docker pull centos:7
+
+        如果出现下面异常信息，则需要同步时间
+            Pulling repository centos
+            Get https://index.docker.io/v1/repositories/library/centos/images: x509: certificate has expired or is not yet valid
+</code></pre><p><img src="http://www.z4a.net/images/2017/12/14/22dbf3e310aeb54cb9.png" alt="异常信息"></p>
+<pre><code>查看当前时间
+        date
+    同步时间
+        ntpdate ntp1.aliyun.com
+    同步时间后,再执行安装命令,安装成功后,查看镜像
+        docker  images 
+</code></pre><p><img src="http://www.z4a.net/images/2017/12/14/331f8327092fe45a72.png" alt="安装镜像"></p>
+<p>由于作者水平有限,欢迎大家批评指正。<br>作者 小杰</p>
+<p>本文版权归作者所有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文链接，否则保留追究法律责任的权利。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/docker/" rel="tag"># docker</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/26/css-start/" rel="next" title="CSS 入门">
+                <i class="fa fa-chevron-left"></i> CSS 入门
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/09/08/SpringMVC_first/" rel="prev" title="SpringMVC入门">
+                SpringMVC入门 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -362,6 +582,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/09/08/docker_init/"
+           data-title="CentOs 6.7 安装Docker" data-url="http://yoursite.com/2016/09/08/docker_init/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -381,8 +609,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/head.jpg"
@@ -440,6 +677,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#关闭selinux"><span class="nav-number">1.</span> <span class="nav-text">关闭selinux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改yum源"><span class="nav-number">2.</span> <span class="nav-text">修改yum源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动docker"><span class="nav-number">3.</span> <span class="nav-text">启动docker</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#docker-安装镜像"><span class="nav-number">4.</span> <span class="nav-text">docker 安装镜像</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -545,11 +798,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
 
 
   

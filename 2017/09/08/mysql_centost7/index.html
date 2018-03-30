@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="MySQL," />
 
 
 
@@ -87,15 +87,32 @@
 
 
 
-<meta name="description" content="追求技术">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小杰blog">
-<meta property="og:url" content="http://yoursite.com/archives/2017/09/index.html">
+<meta name="description" content="centOS7安装mysql 5.7与之前mysql版本的安装方式有些不同，在安装的时候踩过不少的坑,所以记录一下安装步骤。
+安装准备
+检查系统中是否安装了mysql__rpm -qa|grep mysql__
+ ![检查是否安装了mysql][1]
+如果有安装mysql,则需要先卸载之前安装的mysql  yum -y remove mysql然后再查看mysql是否都卸载完成,如果还有没卸载完">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CentOS7 64位下MySQL5.7安装与配置（YUM）">
+<meta property="og:url" content="http://yoursite.com/2017/09/08/mysql_centost7/index.html">
 <meta property="og:site_name" content="小杰blog">
-<meta property="og:description" content="追求技术">
+<meta property="og:description" content="centOS7安装mysql 5.7与之前mysql版本的安装方式有些不同，在安装的时候踩过不少的坑,所以记录一下安装步骤。
+安装准备
+检查系统中是否安装了mysql__rpm -qa|grep mysql__
+ ![检查是否安装了mysql][1]
+如果有安装mysql,则需要先卸载之前安装的mysql  yum -y remove mysql然后再查看mysql是否都卸载完成,如果还有没卸载完">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/0060lm7Tly1fl0e2gwxe9j30rt0e8tag.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/0060lm7Tly1fl0eehy5tcj30ps0coabe.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/0060lm7Tly1fl0ekk3myzj30r9080754.jpg">
+<meta property="og:updated_time" content="2018-03-30T08:39:13.400Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小杰blog">
-<meta name="twitter:description" content="追求技术">
+<meta name="twitter:title" content="CentOS7 64位下MySQL5.7安装与配置（YUM）">
+<meta name="twitter:description" content="centOS7安装mysql 5.7与之前mysql版本的安装方式有些不同，在安装的时候踩过不少的坑,所以记录一下安装步骤。
+安装准备
+检查系统中是否安装了mysql__rpm -qa|grep mysql__
+ ![检查是否安装了mysql][1]
+如果有安装mysql,则需要先卸载之前安装的mysql  yum -y remove mysql然后再查看mysql是否都卸载完成,如果还有没卸载完">
+<meta name="twitter:image" content="http://ww4.sinaimg.cn/large/0060lm7Tly1fl0e2gwxe9j30rt0e8tag.jpg">
 
 
 
@@ -123,13 +140,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2017/09/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/09/08/mysql_centost7/"/>
 
 
 
 
 
-  <title> 归档 | 小杰blog </title>
+  <title> CentOS7 64位下MySQL5.7安装与配置（YUM） | 小杰blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -154,7 +171,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -258,103 +275,224 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 9 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/20/ArrayList_source_analysis/" itemprop="url">
-              
-                <span itemprop="name">JAVA源码分析之ArrayList</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-20T17:16:45+08:00"
-              content="2017-09-20" >
-          09-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/09/08/mysql_centost7/" itemprop="url">
-              
-                <span itemprop="name">CentOS7 64位下MySQL5.7安装与配置（YUM）</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-09-08T17:12:45+08:00"
-              content="2017-09-08" >
-          09-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/08/mysql_centost7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小杰">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小杰blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                CentOS7 64位下MySQL5.7安装与配置（YUM）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-08T17:12:45+08:00">
+                2017-09-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/MySQL/" itemprop="url" rel="index">
+                    <span itemprop="name">MySQL</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/09/08/mysql_centost7/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/09/08/mysql_centost7/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/09/08/mysql_centost7/" class="leancloud_visitors" data-flag-title="CentOS7 64位下MySQL5.7安装与配置（YUM）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>centOS7安装mysql 5.7与之前mysql版本的安装方式有些不同，在安装的时候踩过不少的坑,所以记录一下安装步骤。</p>
+<h3 id="安装准备"><a href="#安装准备" class="headerlink" title="安装准备"></a>安装准备</h3><ol>
+<li>检查系统中是否安装了mysql<pre><code>__rpm -qa|grep mysql__
+ ![检查是否安装了mysql][1]
+</code></pre>如果有安装mysql,则需要先卸载之前安装的mysql<br>  <strong>yum -y remove mysql</strong><br>然后再查看mysql是否都卸载完成,如果还有没卸载完成的，则单独卸载<br> 如:<strong>yum -y remove mysql-libs-5.1.73-8.el6_8.x86_64</strong><a id="more"></a></li>
+<li><p>下载mysql的yum源<br>进入用户目录，创建mysql文件夹<br><strong>mkdir mysql</strong><br>进入该目录,然后去MySQL官网中下载YUM源rpm安装包,如果linux 可以访问外网的话,使用wget 下载,如果不能访问外网则在官网下载好上传到服务器<br><a href="http://dev.mysql.com/downloads/repo/yum/" target="_blank" rel="external">mysql YUM源 rpm安装包</a><br><img src="http://ww4.sinaimg.cn/large/0060lm7Tly1fl0e2gwxe9j30rt0e8tag.jpg" alt="yum下载位置"></p>
+<p>使用wget下载 yum 源安装包<br>wget <a href="http://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm" target="_blank" rel="external">http://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm</a><br><img src="http://ww4.sinaimg.cn/large/0060lm7Tly1fl0eehy5tcj30ps0coabe.jpg" alt="wget 下载yum源安装包"></p>
+</li>
+<li><p>安装yum源<br> <strong>rpm -ivh mysql57-community-release-el7-8.noarch.rpm</strong><br>安装完成得到如下两个文件<br>mysql-community.repo<br>mysql-community-source.repo<br><img src="http://ww2.sinaimg.cn/large/0060lm7Tly1fl0ekk3myzj30r9080754.jpg" alt="安装mysql的yum源"></p>
+</li>
+</ol>
+<h3 id="安装mysql"><a href="#安装mysql" class="headerlink" title="安装mysql"></a>安装mysql</h3><p>执行mysql安装命令<br><strong>yum -y install mysql-server</strong><br>安装完成后,启动mysql服务器<br><strong>service mysqld start</strong><br>或<br><strong>systemctl start mysqld</strong><br>然后查看mysql状态<br>service mysqld status<br>会在 /var/log/mysqld.log文件中会自动生成一个随机的密码,用于安装后登录mysql,查看该随机密码。<br><strong>grep “temporary password” /var/log/mysqld.log</strong></p>
+<p>如果没有生产随机密码则需重置密码</p>
+<h3 id="重置mysql-的密码"><a href="#重置mysql-的密码" class="headerlink" title="重置mysql 的密码"></a>重置mysql 的密码</h3><p>步骤如下:</p>
+<blockquote>
+<ul>
+<li>1.修改 /etc/my.cnf配置文件，在 [mysqld]下添加一行：skip-grant-tables=1<br>  这一行配置让 mysqld 启动时不对密码进行验证</li>
+<li>2.重启 mysqld 服务：systemctl restart mysqld</li>
+<li>3.使用 root 用户登录到 mysql：mysql -u root </li>
+<li>4.切换到mysql数据库(use mysql)，更新 user 表：<br>update user set authentication_string = password(‘root’), password_expired = ‘N’, password_last_changed = now() where user = ‘root’;<br>在之前的版本中，密码字段的字段名是 password，5.7版本改为了 authentication_string</li>
+<li><p>5、退出 mysql，编辑 /etc/my.cnf 配置文件，删除 skip-grant-tables=1 这一行</p>
+</li>
+<li><p>6、systemctl restart mysqld 重启mysqld服务，再用新密码登录即可</p>
+</li>
+</ul>
+</blockquote>
+<p>由于作者水平有限,欢迎大家批评指正。<br>作者 小杰</p>
+<p>本文版权归作者所有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文链接，否则保留追究法律责任的权利。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/MySQL/" rel="tag"># MySQL</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/02/24/blog/" rel="next" title="小杰博客">
+                <i class="fa fa-chevron-left"></i> 小杰博客
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/20/ArrayList_source_analysis/" rel="prev" title="JAVA源码分析之ArrayList">
+                JAVA源码分析之ArrayList <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -362,6 +500,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/09/08/mysql_centost7/"
+           data-title="CentOS7 64位下MySQL5.7安装与配置（YUM）" data-url="http://yoursite.com/2017/09/08/mysql_centost7/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -381,8 +527,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/head.jpg"
@@ -440,6 +595,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装准备"><span class="nav-number">1.</span> <span class="nav-text">安装准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装mysql"><span class="nav-number">2.</span> <span class="nav-text">安装mysql</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重置mysql-的密码"><span class="nav-number">3.</span> <span class="nav-text">重置mysql 的密码</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -545,11 +716,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
 
 
   
